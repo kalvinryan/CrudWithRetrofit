@@ -1,10 +1,12 @@
 package com.example.crudwithretrofit.models;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class ResponseModel {
-    private int kode;
     private String pesan;
+    private int kode;
     private List<DataModel> data;
 
     public int getKode() {

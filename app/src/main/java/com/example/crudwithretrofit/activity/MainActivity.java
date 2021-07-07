@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Kode : "+kode+" | Pesan : "+pesan, Toast.LENGTH_SHORT).show();
                 listData = response.body().getData();
-
                 adData=new AdapterData(MainActivity.this,listData);
                 rvData.setAdapter(adData);
                 adData.notifyDataSetChanged();
